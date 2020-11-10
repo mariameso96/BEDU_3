@@ -1,0 +1,50 @@
+#Reto 1
+{
+ project: {
+  date: 1,
+  name: 1,
+  text: 1
+ }
+}
+{
+ project: {
+  title: 1,
+  cast: 1,
+  year: 1
+ }
+}
+{
+ project: {
+  name: 1,
+  password: 1
+ }
+}
+
+#Reto 2
+
+{
+ filter: {
+  name: 'Greg Powell'
+ }
+}
+{
+ filter: {
+  $or: [
+   {
+    name: 'Greg Powell'
+   },
+   {
+    name: 'Mercedes Tyler'
+   }
+  ]
+ }
+}
+{
+ project: {
+  num_mflix_comments: 1
+ },
+ sort: {
+  num_mflix_comments: -1
+ },
+ limit: 1
+}
